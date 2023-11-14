@@ -1,0 +1,13 @@
+Package: linearregtt
+Type: Package
+Title: Simple Linear Regression TT
+Version: 0.1.0
+Author: Tommy Tang <hrtang@umich.edu>
+Maintainer: Tommy Tang <hrtang@umich.edu>
+Description: Try to simulate the lm() function in R. 
+    This function is only for my R packages development practice.
+    Not for others.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
