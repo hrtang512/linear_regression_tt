@@ -13,3 +13,7 @@ LazyData: true
 RoxygenNote: 7.2.3
 URL: https://github.com/hrtang512/linearregtt
 BugReports: https://github.com/hrtang512/linearregtt/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
