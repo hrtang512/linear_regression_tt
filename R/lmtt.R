@@ -1,16 +1,29 @@
 #' @title My SLR function lmtt
 #'
 #' @description
-#' A simple linear regression function
+#' A simple linear regression function that fits a straight line to the data using the ordinary least squares method.
+#' It assumes that X and Y are numeric vectors of the same length and that X is not a constant vector.
+#' It returns a list of output similar to the lm function in R, containing the coefficients,
+#' standard errors, t-values, p-values, F-statistic, R-squared, adjusted R-squared, residuals, and fitted values.
 #'
-#' @param X The predictor
-#' @param Y The response variable
 #'
-#' @return The output similar to lm function in R
+#' @param X The predictor variable.
+#'
+#' @param Y The response variable.
+#'
+#' @return The output similar to lm function in R. This function returns a list of output, including the coefficients,
+#' standard errors, t-values, p-values, F-statistic, R-squared, adjusted R-squared, residuals, and fitted values.
+#'
 #' @export
 #'
 #' @examples
+#' #example1
 #' lmtt(c(1,2,3), c(0.9,1.8,3.1))
+#'
+#' #example2
+#' X1 = c(4.17,5.58,5.18,6.11,4.50,4.61,5.17,4.53,5.33,5.14)
+#' Y1 = c(4.81,4.17,4.41,3.59,5.87,3.83,6.03,4.89,4.32,4.69)
+#' lmtt(X1,Y1)
 
 
 lmtt = function(X,Y) {

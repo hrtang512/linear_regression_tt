@@ -1,5 +1,6 @@
 ---
 title: "linearregtt"
+author: "Tommy Tang"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{linearregtt}
@@ -16,4 +17,5 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(linearregtt)
+library(bench)
 ```
