@@ -18,4 +18,54 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(linearregtt)
 library(bench)
+
+###First test mtcars dataset
+#linear regression formula: wt~hp
+library(carData)
+##check if results are correct
+# check intercept estimate with lm() function in R
+all.equal((as.numeric(lmtt(mtcars$hp,mtcars$wt)$coeff[1,1])),
+          (as.numeric(lm(mtcars$wt~mtcars$hp)$coeff[1])))
+
+# check slope estimate with lm() function in R
+all.equal((as.numeric(lmtt(mtcars$hp,mtcars$wt)$coeff[2,1])),
+          (as.numeric(lm(mtcars$wt~mtcars$hp)$coeff[2])))
+
+# check F-statistics with lm() function in R
+all.equal(as.numeric(lmtt(mtcars$hp,mtcars$wt)$fstatistic[1]),
+          as.numeric(summary(lm(mtcars$wt~mtcars$hp))$fstatistic[1]))
+
+# check R squared with lm() function in R
+all.equal(as.numeric(lmtt(mtcars$hp,mtcars$wt)$r.squared),
+          summary(lm(mtcars$wt~mtcars$hp))$r.squared)
+
+# check adjusted R squared with lm() function in R
+all.equal(as.numeric(lmtt(mtcars$hp,mtcars$wt)$adj.r.squared),
+          summary(lm(mtcars$wt~mtcars$hp))$adj.r.squared)
+
+## benchmark
+
+# slope
+mark((as.numeric(lmtt(mtcars$hp,mtcars$wt)$coeff[1,1])),
+     (as.numeric(lm(mtcars$wt~mtcars$hp)$coeff[1])))
+
+# F-statistics
+mark(as.numeric(lmtt(mtcars$hp,mtcars$wt)$fstatistic[1]),
+     as.numeric(summary(lm(mtcars$wt~mtcars$hp))$fstatistic[1]))
+
+# adjusted R          
+mark(as.numeric(lmtt(mtcars$hp,mtcars$wt)$adj.r.squared),
+     summary(lm(mtcars$wt~mtcars$hp))$adj.r.squared)
+
+###Then, test simulated data
+X2 = 11:20
+Y2 = 1:10
+##check if results are correct
+# check intercept estimate with lm() function in R
+all.equal(as.numeric(lmtt(X2,Y2)$coeff[1,1]),
+          (as.numeric(lm(Y2~X2)$coeff[1])))
+
+## benchmark
+mark(as.numeric(lmtt(X2,Y2)$coeff[1,1]),
+     (as.numeric(lm(Y2~X2)$coeff[1])))
 ```
