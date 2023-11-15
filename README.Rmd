@@ -26,7 +26,6 @@ A simple linear regression function that fits a straight line to the data using 
 You can install the development version of linearregtt from [GitHub](https://github.com/) with:
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-#install.packages("devtools")
 devtools::install_github("hrtang512/linearregtt")
 ```
 
