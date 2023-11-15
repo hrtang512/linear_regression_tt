@@ -4,6 +4,8 @@
 # linearregtt
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/hrtang512/linearregtt/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hrtang512/linearregtt/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 A simple linear regression function that fits a straight line to the
@@ -22,6 +24,16 @@ You can install the development version of linearregtt from
 ``` r
 #install.packages("devtools")
 devtools::install_github("hrtang512/linearregtt")
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#>       ✔  checking for file 'C:\Users\55340\AppData\Local\Temp\RtmpW06CyX\remotes3af075723606\hrtang512-linearregtt-8170c01/DESCRIPTION'
+#>       ─  preparing 'linearregtt':
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
+#>       ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>      Omitted 'LazyData' from DESCRIPTION
+#>       ─  building 'linearregtt_0.1.0.tar.gz'
+#>      
+#> 
 ```
 
 ## Example

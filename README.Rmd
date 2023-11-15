@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # linearregtt
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/hrtang512/linearregtt/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hrtang512/linearregtt/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 A simple linear regression function that fits a straight line to the data using the ordinary least squares method. It assumes that X and Y are numeric vectors of the same length and that X is not a constant vector. It returns a list of output similar to the lm function in R, containing the coefficients, standard errors, t-values, p-values, F-statistic, R-squared, adjusted R-squared, residuals, and fitted values.
