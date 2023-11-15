@@ -24,16 +24,6 @@ You can install the development version of linearregtt from
 ``` r
 #install.packages("devtools")
 devtools::install_github("hrtang512/linearregtt")
-#> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>       ✔  checking for file 'C:\Users\55340\AppData\Local\Temp\RtmpozR0dP\remotes683835eb36f0\hrtang512-linearregtt-98e13f8/DESCRIPTION'
-#>       ─  preparing 'linearregtt':
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
-#>       ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>      Omitted 'LazyData' from DESCRIPTION
-#>       ─  building 'linearregtt_0.1.0.tar.gz'
-#>      
-#> 
 ```
 
 ## Example
