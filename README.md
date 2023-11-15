@@ -20,27 +20,8 @@ You can install the development version of linearregtt from
 [GitHub](https://github.com/) with:
 
 ``` r
-install.packages("devtools")
-#> Installing package into 'C:/Users/55340/AppData/Local/Temp/Rtmp4g6EDO/temp_libpath77f46cc147f8'
-#> (as 'lib' is unspecified)
-#> package 'devtools' successfully unpacked and MD5 sums checked
-#> 
-#> The downloaded binary packages are in
-#>  C:\Users\55340\AppData\Local\Temp\Rtmpc5VSL6\downloaded_packages
+#install.packages("devtools")
 devtools::install_github("hrtang512/linearregtt")
-#> Downloading GitHub repo hrtang512/linearregtt@HEAD
-#> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>       ✔  checking for file 'C:\Users\55340\AppData\Local\Temp\Rtmpc5VSL6\remotes7cfc3f52294a\hrtang512-linearregtt-8846d3b/DESCRIPTION'
-#>       ─  preparing 'linearregtt':
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
-#>       ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>      Omitted 'LazyData' from DESCRIPTION
-#>       ─  building 'linearregtt_0.1.0.tar.gz'
-#>      
-#> 
-#> Installing package into 'C:/Users/55340/AppData/Local/Temp/Rtmp4g6EDO/temp_libpath77f46cc147f8'
-#> (as 'lib' is unspecified)
 ```
 
 ## Example
