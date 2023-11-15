@@ -16,6 +16,8 @@ BugReports: https://github.com/hrtang512/linearregtt/issues
 Suggests: 
     knitr,
     rmarkdown,
+    bench,
+    carData,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
