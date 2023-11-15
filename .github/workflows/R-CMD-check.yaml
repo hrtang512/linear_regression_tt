@@ -16,7 +16,7 @@ jobs:
       R_KEEP_PKG_SOURCE: yes
     steps:
       - name: Install bench package
-        run: remotes::install_github("r-lib/bench")
+        run: remotes::install_github('r-lib/bench')
 
       - uses: actions/checkout@v3
 
