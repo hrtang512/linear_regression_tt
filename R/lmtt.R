@@ -16,9 +16,6 @@
 #'
 #' @export
 #'
-#' @import bench
-#' @import carData
-#'
 #'
 #' @examples
 #' #example1
