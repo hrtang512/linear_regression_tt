@@ -25,7 +25,7 @@ You can install the development version of linearregtt from
 #install.packages("devtools")
 devtools::install_github("hrtang512/linearregtt")
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>       ✔  checking for file 'C:\Users\55340\AppData\Local\Temp\RtmpW06CyX\remotes3af075723606\hrtang512-linearregtt-8170c01/DESCRIPTION'
+#>       ✔  checking for file 'C:\Users\55340\AppData\Local\Temp\RtmpozR0dP\remotes683835eb36f0\hrtang512-linearregtt-98e13f8/DESCRIPTION'
 #>       ─  preparing 'linearregtt':
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
 #>       ─  checking for LF line-endings in source and make files and shell scripts
@@ -38,7 +38,7 @@ devtools::install_github("hrtang512/linearregtt")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+These are basic examples which show you how to solve a common problem:
 
 ``` r
 library(linearregtt)

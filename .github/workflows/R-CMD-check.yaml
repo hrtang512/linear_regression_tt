@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [main, master]
 
+name: Install bench package
+run: remotes::install_github("r-lib/bench")
+
 name: R-CMD-check
 
 jobs:
