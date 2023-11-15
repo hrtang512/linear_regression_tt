@@ -28,7 +28,7 @@ devtools::install_github("hrtang512/linearregtt")
 
 ## Example
 
-These are basic examples which show you how to solve a common problem:
+These are basic examples which show you how to solve a common problem :
 
 ``` r
 library(linearregtt)
