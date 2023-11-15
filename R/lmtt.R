@@ -30,8 +30,6 @@
 #' #require carData
 #' library(carData)
 #' lmtt(mtcars$hp,mtcars$wt)
-#'
-
 
 lmtt = function(X, Y) {
   #Check if input is proper

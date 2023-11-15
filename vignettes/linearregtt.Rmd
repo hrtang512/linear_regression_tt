@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(linearregtt)
+
+remotes::install_github("r-lib/bench")
 library(bench)
 
 ###First test mtcars dataset
@@ -46,20 +48,16 @@ all.equal(as.numeric(lmtt(mtcars$hp,mtcars$wt)$adj.r.squared),
 ## benchmark
 
 # slope
-if (requireNamespace("bench", quietly = TRUE)) {
-  mark((as.numeric(lmtt(mtcars$hp,mtcars$wt)$coeff[1,1])),
+mark((as.numeric(lmtt(mtcars$hp,mtcars$wt)$coeff[1,1])),
      (as.numeric(lm(mtcars$wt~mtcars$hp)$coeff[1])))
 
 # F-statistics
-  mark(as.numeric(lmtt(mtcars$hp,mtcars$wt)$fstatistic[1]),
+mark(as.numeric(lmtt(mtcars$hp,mtcars$wt)$fstatistic[1]),
      as.numeric(summary(lm(mtcars$wt~mtcars$hp))$fstatistic[1]))
 
 # adjusted R          
-  mark(as.numeric(lmtt(mtcars$hp,mtcars$wt)$adj.r.squared),
+mark(as.numeric(lmtt(mtcars$hp,mtcars$wt)$adj.r.squared),
      summary(lm(mtcars$wt~mtcars$hp))$adj.r.squared)
-} else {
-  message("bench package not available, skipping this section.")
-}
 
 ###Then, test simulated data
 X2 = 11:20
@@ -70,11 +68,7 @@ all.equal(as.numeric(lmtt(X2,Y2)$coeff[1,1]),
           (as.numeric(lm(Y2~X2)$coeff[1])))
 
 ## benchmark
-if (requireNamespace("bench", quietly = TRUE)) {
-  mark(as.numeric(lmtt(X2,Y2)$coeff[1,1]),
+mark(as.numeric(lmtt(X2,Y2)$coeff[1,1]),
      (as.numeric(lm(Y2~X2)$coeff[1])))
-} else {
-  message("bench package not available, skipping this section.")
-}
 
 ```
