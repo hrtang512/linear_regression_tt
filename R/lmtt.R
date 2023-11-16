@@ -32,10 +32,6 @@
 #' lmtt(mtcars$hp,mtcars$wt)
 
 lmtt = function(X, Y) {
-  #Check if input is proper
-  if (!is.numeric(X) || !is.numeric(Y) || length(X) != length(Y)) {
-    stop("X and Y must be numeric vectors of the same length")
-  }
 
   #Prepare
   Xbar = mean(X)
