@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/hrtang512/linearregtt/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hrtang512/linearregtt/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/hrtang512/linearregtt/branch/master/graph/badge.svg)](https://app.codecov.io/gh/hrtang512/linearregtt?branch=master)
 <!-- badges: end -->
 
 A simple linear regression function that fits a straight line to the
