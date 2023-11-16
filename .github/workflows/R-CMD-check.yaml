@@ -25,6 +25,7 @@ jobs:
         run:
           Rscript -e 'install.packages("remotes")'
           Rscript -e 'remotes::install_cran("bench")'
+          Rscript -e 'remotes::install_cran("carData")'
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:

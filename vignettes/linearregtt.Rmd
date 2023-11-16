@@ -17,8 +17,6 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(linearregtt)
-
-remotes::install_github("r-lib/bench")
 library(bench)
 
 ###First test mtcars dataset
