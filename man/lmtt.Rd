@@ -34,5 +34,4 @@ lmtt(X1,Y1)
 #require carData
 library(carData)
 lmtt(mtcars$hp,mtcars$wt)
-
 }
